@@ -1,162 +1,80 @@
-/* ベースリセット */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #fff;
-  color: #222;
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
   line-height: 1.6;
-  text-align: center;
-  padding: 20px;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
-/* ヘッダー */
 header {
-  padding: 40px 0 30px;
-  border-bottom: 1px solid #eee;
+  background-color: #4CAF50;
+  color: white;
+  padding: 2em;
+  text-align: center;
 }
 
-header h1 {
-  font-weight: 700;
-  font-size: 2.8rem;
-  color: #2c3e50;
-  margin-bottom: 0.3em;
-  letter-spacing: 1.2px;
-}
-
-header p {
-  font-size: 1.2rem;
-  color: #7f8c8d;
-  font-weight: 300;
-}
-
-/* セクション共通 */
 section {
-  margin: 40px 0;
+  padding: 2em;
+  max-width: 900px;
+  margin: auto;
 }
 
-/* 農園紹介 */
-.about {
-  font-size: 1.1rem;
-  color: #34495e;
-  background: #fefefe;
-  padding: 30px 40px;
+h2 {
+  border-left: 6px solid #4CAF50;
+  padding-left: 10px;
+  margin-top: 1em;
+  color: #2e7d32;
+}
+
+.about-images {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+}
+
+.about-images img {
+  width: 48%;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgb(0 0 0 / 0.05);
-  line-height: 1.8;
-}
-
-/* 画像ギャラリー */
-.image-gallery h2 {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: #2c3e50;
-  margin-bottom: 24px;
+  object-fit: cover;
 }
 
 .circle-images {
   display: flex;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
 }
 
 .circle-images img {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 6px 15px rgba(44, 62, 80, 0.15);
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  cursor: pointer;
+  transition: transform 0.3s;
 }
 
 .circle-images img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 30px rgba(44, 62, 80, 0.3);
+  transform: scale(1.05);
 }
 
-/* オンラインショップ */
 .shop a {
   display: inline-block;
-  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  background-color: #4CAF50;
   color: white;
-  padding: 14px 32px;
-  font-weight: 600;
-  font-size: 1.3rem;
-  border-radius: 30px;
-  box-shadow: 0 6px 15px rgba(39, 174, 96, 0.6);
+  padding: 0.8em 1.5em;
   text-decoration: none;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 5px;
+  margin-top: 1em;
 }
 
 .shop a:hover {
-  background: linear-gradient(135deg, #2ecc71, #27ae60);
-  box-shadow: 0 10px 25px rgba(46, 204, 113, 0.8);
+  background-color: #388e3c;
 }
 
-/* Twitterセクション */
-.twitter h2 {
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: #2c3e50;
-  margin-bottom: 20px;
-}
-
-/* お問い合わせ */
-.contact {
-  background: #f9f9f9;
-  padding: 30px 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgb(0 0 0 / 0.07);
-  font-size: 1.1rem;
-  color: #34495e;
-}
-
-.contact a {
-  color: #27ae60;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-.contact a:hover {
-  color: #2ecc71;
-}
-
-/* フッター */
 footer {
-  margin: 40px 0 20px;
-  font-size: 0.9rem;
-  color: #999;
-  letter-spacing: 0.05em;
-}
-
-/* レスポンシブ対応 */
-@media (max-width: 600px) {
-  body {
-    padding: 16px;
-    max-width: 100%;
-  }
-  .circle-images {
-    gap: 16px;
-  }
-  .circle-images img {
-    width: 100px;
-    height: 100px;
-  }
-  .shop a {
-    font-size: 1rem;
-    padding: 10px 24px;
-  }
-  .about,
-  .contact {
-    padding: 20px;
-  }
+  text-align: center;
+  padding: 1em;
+  background-color: #ddd;
+  margin-top: 3em;
 }
