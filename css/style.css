@@ -121,6 +121,31 @@ footer a:hover {
   border-radius: 8px;
 }
 
+/* トップ画像を中央寄せ＆リサイズ（hero-small） */
+.hero-small{
+  display:block;          /* インライン画像をブロック化 */
+  margin:12px auto;       /* 左右 auto で水平センター */
+  max-width:300px;        /* 好きな幅に調整。例: 300px */
+  width:80%;              /* スマホでもはみ出さないよう保険 */
+  height:auto;            /* 比率を保ったまま縮小 */
+}
+
+/* キャッチコピー専用（tagline） */
+.tagline{
+  font-size:0.95rem;      /* 本文より少し小さめ。数字を変えてOK */
+  line-height:1.5;
+  text-align:center;      /* 画像と揃えて中央寄せ */
+  margin:8px 0 18px;      /* 画像との間隔を調整 */
+  color:#555;             /* 薄めグレーで控えめに */
+}
+
+/* スマホ時に文字が大き過ぎる場合 ↓ をいじる */
+@media screen and (max-width:600px){
+  .tagline{
+    font-size:0.9rem;
+  }
+}
+
 /* スマホ対応 */
 @media screen and (max-width: 600px) {
   header h1 {
