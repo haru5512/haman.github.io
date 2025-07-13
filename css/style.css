@@ -165,27 +165,21 @@ footer a:hover {
 
 /* Slideshow container */
 .slideshow-container{
--  max-width: 1000px;
--  position: relative;
--  margin: auto;
--  text-align: center;
-+  /* 写真を載せる“箱”そのものを中央に置く */
-+  width: 50%;           /* ←好きな大きさ。例: 50% ＝半分、600px など固定でもOK */
-+  max-width: 500px;     /* ←PC画面での上限。もっと大きくしたければ数値↑ */
-+  margin: 20px auto;    /* 上下20px余白・左右auto で “中央寄せ” 完成 */
-+  position: relative;   /* フェード切替で必要なので残す */
-+  text-align: center;   /* 中身に inline 要素を入れたとき用。保険で残す */
+  width: 50%;          /* ←好みで調整 */
+  max-width: 500px;    /* PC での上限 */
+  margin: 20px auto;   /* 中央寄せ */
+  position: relative;
+  text-align: center;
 }
 
 /* Hide the images by default */
 .mySlides{
--  display: none;
-+  display: none;       /* JS が順番に display:block へ */
-+  width: 100%;         /* 親枠いっぱいに広げる＝左右ピッタリ中央 */
-+  height: auto;        /* 縦横比はそのまま */
-+  margin: 0 auto;      /* 万が一ズレても中央に矯正 */
-+  border-radius: 8px;  /* 角丸お好みで。要らなければ削除 */
-+  box-shadow: 0 2px 12px rgba(0,0,0,0.15); /* 影もお好みで */
+  display: none;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 /* Fading animation */
