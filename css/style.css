@@ -132,11 +132,12 @@ footer a:hover {
 
 /* キャッチコピー専用（tagline） */
 .tagline{
-  font-size:0.95rem;      /* 本文より少し小さめ。数字を変えてOK */
+  font-size:0.95rem;
   line-height:1.5;
-  text-align:center;      /* 画像と揃えて中央寄せ */
-  margin:8px 0 18px;      /* 画像との間隔を調整 */
-  color:#555;             /* 薄めグレーで控えめに */
+  text-align:center;
+  margin:8px 0 18px;
+-  color:#555;          /* ← ここを消して… */
++  color:rgba(255,255,255,0.9);  /* 白に近い明るさへ */
 }
 
 /* スマホ時に文字が大き過ぎる場合 ↓ をいじる */
